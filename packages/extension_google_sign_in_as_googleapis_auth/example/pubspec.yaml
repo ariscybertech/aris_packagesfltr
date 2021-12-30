@@ -1,0 +1,29 @@
+name: extension_google_sign_in_example
+description: Example of Google Sign-In plugin and googleapis.
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  extension_google_sign_in_as_googleapis_auth:
+    # When depending on this package from a real application you should use:
+    #   extension_google_sign_in_as_googleapis_auth: ^x.y.z
+    # See https://dart.dev/tools/pub/dependencies#version-constraints
+    # The example app is bundled with the plugin so we use a path dependency on
+    # the parent directory to use the current plugin's version.
+    path: ../
+  flutter:
+    sdk: flutter
+  google_sign_in: ^5.1.0
+  googleapis: ^5.0.1
+  googleapis_auth: ^1.1.0
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
